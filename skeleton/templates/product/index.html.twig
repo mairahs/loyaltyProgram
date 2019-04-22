@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1 style="margin-bottom=20px;">Programme de fidélisation</h1>
+
+    	<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>Période</th>
+					<th>Points</th>
+					<th>Euros</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Période 1</td>
+					<td>{{allPoints1}}</td>
+					<td>{{money1}}</td>
+				</tr>
+                <tr>
+					<td>Période 2</td>
+					<td>{{allPoints2}}</td>
+					<td>{{money2}}</td>
+				</tr>
+                <tr>
+					<td>Période 3</td>
+					<td>{{allPoints3}}</td>
+					<td>{{money3}}</td>
+				</tr>
+			</tbody>
+		</table>
+</div>
+{% endblock %}
